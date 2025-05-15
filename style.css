@@ -1,0 +1,58 @@
+body {
+    background-image: url("./images/AdobeStock_124534065-Poker-Table-with-Chips-and-Cards.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    height: 100vh;
+    color: #ffffff;
+    text-shadow: 0 0 10px black;
+}
+
+h1 {
+    margin-top: 5rem;
+    font-size: 4rem;
+    color: goldenrod;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+button {
+    width: 12rem;
+    font-size: 1rem;
+    margin: 10px;
+    font-weight: bold;
+    color: #016f32;
+    background-color: goldenrod;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#message-el {
+    font-style: italic;
+}
+
+#new-card-btn {
+    display: none;
+}
+
+button:hover {
+    box-shadow: 0 0 30px white;
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        margin-top: unset;
+    }
+}
