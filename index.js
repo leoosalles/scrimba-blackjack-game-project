@@ -19,9 +19,9 @@ function resetGame() {
 function getRandomCard() {
     let randomNumber = Math.floor(Math.random() * 13) + 1;
 
-    if(randomNumber > 10) {
+    if (randomNumber > 10) {
         return 10;
-    } else if(randomNumber === 1) {
+    } else if (randomNumber === 1) {
         return 11;
     } else {
         return randomNumber;
@@ -29,18 +29,18 @@ function getRandomCard() {
 };
 
 function startGame() {
-        resetGame()
+    resetGame()
 
-        isAlive = true;
-        let firstCard = getRandomCard();
-        let secondCard = getRandomCard();
-        cards = [firstCard, secondCard];
-        sum = firstCard + secondCard;
+    isAlive = true;
+    let firstCard = getRandomCard();
+    let secondCard = getRandomCard();
+    cards = [firstCard, secondCard];
+    sum = firstCard + secondCard;
 
-        document.getElementById('start-game-btn').style.display = 'inline-block';
-        document.getElementById('new-card-btn').style.display = 'inline-block';
-        
-        renderGame();  
+    document.getElementById('start-game-btn').style.display = 'inline-block';
+    document.getElementById('new-card-btn').style.display = 'inline-block';
+
+    renderGame();
 }
 
 function renderGame() {
@@ -66,12 +66,12 @@ function renderGame() {
         newCardBtn.style.display = 'none';
         newGameBtn.style.display = 'inline-block'
     };
-    
+
     messageEl.textContent = message;
 }
 
 function newCard() {
-    if(hasBlackJack === false && isAlive === true){
+    if (hasBlackJack === false && isAlive === true) {
         let drawnCard = getRandomCard();
         sum += drawnCard;
         cards.push(drawnCard);
