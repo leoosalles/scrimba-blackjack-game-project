@@ -9,6 +9,7 @@ body {
     height: 100vh;
     color: #ffffff;
     text-shadow: 0 0 10px black;
+    overflow: hidden;
 }
 
 h1 {
